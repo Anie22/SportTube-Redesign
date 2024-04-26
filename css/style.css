@@ -11,6 +11,10 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+ul {
+    padding: 0 !important;
+}
+
 .inner-body .main-header .header-content-holder{
     align-items: center;
     background: #00309b;
