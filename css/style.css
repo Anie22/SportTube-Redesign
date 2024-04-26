@@ -46,6 +46,28 @@ body {
     min-height: 76.7vh;
     background-color: #e9eff3;
 }
+.inner-body .card-section .inner-card .inner-sub-card .content-holder{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #f4f7f8;
+    box-shadow: 0 4px 16px 0 rgba(94, 115, 129, 0.15);
+    height: fit-content;
+    gap: 4px;
+}
+.inner-body .card-section .inner-card .inner-sub-card .content-holder .content{
+    padding: 12px;
+}
+.inner-body .card-section .inner-card .inner-sub-card .content-holder .content p{
+    color: #8f99af;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    line-height: 145%;
+}
 .inner-body .card-section .inner-card .inner-sub-card .moment .sub-card .match-news{
     display: flex;
     flex-direction: column;
@@ -101,7 +123,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: hsl(237, 100%, 45%);
+    background: hsl(0, 100%, 50%);
     height: 40px;
     width: 150px;
     border-radius: 50px;

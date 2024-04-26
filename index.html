@@ -67,9 +67,9 @@
         <div class="card-section">
             <div class="inner-card container">
                 <div class="inner-sub-card d-flex flex-column gap-3 justify-content-center">
-                    <div class="">
-                        <div>
-                            <p>rrrr</p>
+                    <div class="content-holder w-100">
+                        <div class="content">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas maxime eaque consequuntur aliquid numquam itaque voluptate. Inventore velit ab illum explicabo dolores facilis culpa quam incidunt ad? At, veniam ducimus.</p>
                         </div>
                     </div>
                     <div class="moment row gap-2">
@@ -90,7 +90,7 @@
                                 </div>
                                 <div class="d-flex justify-content-between date-link">
                                     <div class="date">
-                                        @<span id="dateStamp"></span>
+                                        @<span id="dateStamp" aria-label="forDate"></span>
                                     </div>
                                     <div class="link">
                                         <a href="#" class="d-flex gap-2 text-decoration-none">
@@ -319,17 +319,5 @@
             location.classList.add('active');
         })
     };
-
-    function datePosted () {
-        const day = new Date()
-        const year = day.getFullYear();
-        const month = day.getMonth() + 1;
-        const currentDay = day.getDate();
-
-        const combine = `${year}-${month.toString().padStart(2, '0')}-${currentDay}`
-        date.textContent += combine
-    }
-
-    datePosted()
 </script>
 </html>
