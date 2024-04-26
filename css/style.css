@@ -95,6 +95,7 @@ body {
 }
 .inner-body .card-section .inner-card .inner-sub-card .moment .sub-card .match-news .img-text-row .img-holder img{
     border-radius: inherit;
+    height: inherit;
 }
 .inner-body .card-section .inner-card .inner-sub-card .moment .sub-card .match-news .img-text-row .text{
     width: 57%;
