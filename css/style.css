@@ -14,6 +14,7 @@ body {
 .inner-body .main-header .header-content-holder{
     align-items: center;
     background: #00309b;
+    width: 100%;
 }
 .inner-body .main-header .header-content-holder .inner-header .logo-lang-holder .brand-holder .link img{
     height: 40px;
@@ -80,14 +81,17 @@ body {
     height: fit-content;
     gap: 4px;
 }
-.inner-body .card-section .inner-card .inner-sub-card .moment .sub-card .match-news .img-text-row{
-    height: fit-content;
+.inner-body .card-section .inner-card .inner-sub-card .moment .sub-card .match-news:hover{
+    box-shadow: 0 3px 12px 0 rgba(247, 3, 3, 0.345);
+    cursor: pointer;
+}
+.inner-body .card-section .inner-card .inner-sub-card .moment .sub-card .match-news .img-text-row {
     align-items: center;
 }
 .inner-body .card-section .inner-card .inner-sub-card .moment .sub-card .match-news .img-text-row .img-holder{
     width: 300px;
     border-radius: 7px;
-    height: 150px;
+    height: 200px;
 }
 .inner-body .card-section .inner-card .inner-sub-card .moment .sub-card .match-news .img-text-row .img-holder img{
     border-radius: inherit;
@@ -100,7 +104,11 @@ body {
     font-weight: 500;
     letter-spacing: 0.4px;
     line-height: 120%;
-    color: #282828;;
+    color: #282828;
+}
+.inner-body .card-section .inner-card .inner-sub-card .moment .sub-card .match-news .img-text-row .text .title:hover{
+    color: hsl(0, 100%, 50%);
+    cursor: pointer;
 }
 .inner-body .card-section .inner-card .inner-sub-card .moment .sub-card .match-news .img-text-row .text .sum{
     color: #8f99af;
@@ -203,7 +211,6 @@ body {
     }
     .inner-body .card-section .inner-card .inner-sub-card .moment .sub-card .match-news {
         align-items: center;
-        padding: 12px !important;
     }
     .inner-body .card-section .inner-card .inner-sub-card .moment .sub-card .match-news .img-text-row{
         justify-content: center;
