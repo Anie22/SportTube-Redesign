@@ -33,6 +33,9 @@ body {
 }
 .inner-body .main-header .header-content-holder .inner-header .links-holder .nav-content .nav .nav-fills:hover{
     opacity: 100%;
+    border-bottom: 4px solid;
+    border-image: linear-gradient(to right, #ff6535, #ff3f3d);
+    border-image-slice: 1;
 }
 .inner-body .main-header .header-content-holder .inner-header .links-holder .nav-content .nav .nav-fills.active{
     border-bottom: 4px solid;
@@ -228,49 +231,6 @@ body {
     }
     .inner-body .card-section .inner-card .inner-sub-card .moment .sub-card .match-news .date-link {
         gap: 40px;
-    }
-    .inner-body .card-section .inner-card .inner-sub-card .moment .sub-card .match-news .date-link .link {
-        height: 35px;
-        width: 130px;
-        border-radius: 25px;
-    }
-    .inner-body .card-section .inner-card .inner-sub-card .moment .sub-card .match-news .date-link .link a {
-        font-size: 14px;
-    }
-    .inner-body .card-section .inner-card .inner-sub-card .moment .aside-item{
-        width: 100%;
-        margin: 0;
-    }
-    .inner-body .card-section .inner-card .inner-sub-card .moment .aside-item .aside-links {
-        padding: 12px !important;
-    }
-}
-@media only screen and (max-width: 900px) {
-    .inner-body .card-section {
-        padding: 15px;
-    }
-    .inner-body .card-section .inner-card .inner-sub-card .moment .sub-card {
-        padding: 0;
-    }
-    .inner-body .card-section .inner-card .inner-sub-card .moment .sub-card .match-news {
-        align-items: center;
-        padding: 12px !important;
-    }
-    .inner-body .card-section .inner-card .inner-sub-card .moment .sub-card .match-news .img-text-row{
-        justify-content: center;
-        gap: 18px;
-    }
-    .inner-body .card-section .inner-card .inner-sub-card .moment .sub-card .match-news .img-text-row .img-holder {
-        height: 150px;
-        width: 100%;
-        padding: 0;
-    }
-    .inner-body .card-section .inner-card .inner-sub-card .moment .sub-card .match-news .img-text-row .text {
-        width: 100%;
-        padding: 0;
-    }
-    .inner-body .card-section .inner-card .inner-sub-card .moment .sub-card .match-news .date-link {
-        width: 100%;
     }
     .inner-body .card-section .inner-card .inner-sub-card .moment .sub-card .match-news .date-link .link {
         height: 35px;
