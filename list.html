@@ -43,7 +43,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-fills">
-                                    <a href="/list.html" class="text-decoration-none text-white">
+                                    <a href="/list.html#" class="text-decoration-none text-white">
                                         <img src="/img/tennis.png" alt="tennis-icon" width="18px" height="18px">
                                         <span>Tennis</span>
                                     </a>
@@ -85,7 +85,7 @@
                                             <ul class="nav list-style-none gap-2">
                                                 <div class="d-flex gap-2 align-items-center justify-content-center lin">
                                                     <li class="link">
-                                                        <a href="/jjj">Liverpool</a>
+                                                        <a class="hov" href="/jjj">Liverpool</a>
                                                     </li>
                                                     <span class="fa-hld"><i class="fa fa-circle"></i></span>
                                                 </div>
@@ -325,7 +325,15 @@
     const navLinks = document.querySelectorAll('.nav-fills');
 
     navLinks.forEach(navLink => {
-        console.log(path)
+        const href = navLink.querySelector('a').getAttribute('href');
+        if (path === href) {
+            navLink.classList.add('active');
+        }
+
+        navLink.addEventListener('click', function(e) {
+            navLinks.forEach(link => link.classList.remove('active'));
+            navLink.classList.add('active');
+        });
     });
 </script>
 </html>

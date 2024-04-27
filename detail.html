@@ -32,30 +32,30 @@
                         <div class="nav-content overflow-auto">
                             <ul class="nav-content nav gap-5 px-4">
                                 <li class="nav-fills">
-                                    <a href="/" class="text-decoration-none text-white">
+                                    <a href="/" class="nav-fills-b text-decoration-none text-white">
                                        <span>Match previews</span>
                                     </a>
                                 </li>
                                 <li class="nav-fills">
-                                    <a href="/list.html" class="text-decoration-none text-white">
+                                    <a href="/list.html" class="nav-fills-b text-decoration-none text-white">
                                         <img src="/img/ball.png" alt="ball-icon" width="18px" height="18px">
                                         <span>Football</span>
                                     </a>
                                 </li>
                                 <li class="nav-fills">
-                                    <a href="/list.html" class="text-decoration-none text-white">
+                                    <a href="/list.html#" class="nav-fills-b text-decoration-none text-white">
                                         <img src="/img/tennis.png" alt="tennis-icon" width="18px" height="18px">
                                         <span>Tennis</span>
                                     </a>
                                 </li>
                                 <li class="nav-fills">
-                                    <a href="/#basket" class="text-decoration-none text-white">
+                                    <a href="/#basket" class="nav-fills-b text-decoration-none text-white">
                                         <img src="/img/basket-ball.png" alt="Basketball-icon" width="18px" height="18px">
                                         <span>Basketball</span>
                                     </a>
                                 </li>
                                 <li class="nav-fills">
-                                    <a href="/detail.html" class="text-decoration-none text-white">
+                                    <a href="/detail.html" class="nav-fills-b text-decoration-none text-white">
                                         Others
                                     </a>
                                 </li>
@@ -95,7 +95,7 @@
                                     <div>
                                         <h4 class="m-0">Heading</h4>
                                     </div>
-                                    <div class="row flex-column gap-2 align-items-center justify-content-start col-lg-6 box">
+                                    <div class="row flex-column gap-2 align-items-center justify-content-start col-lg-6 box mb-3">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class='card px-3 py-2 rounded-5 bg-light shadow'>
                                                 <p class="m-0">gnjyy</p>
@@ -341,10 +341,15 @@
     const navLinks = document.querySelectorAll('.nav-fills');
 
     navLinks.forEach(navLink => {
-        navLink.addEventListener('click', function boss () {
-            navLink.classList.add('active')
-            console.log(path)
-        })
+        const href = navLink.querySelector('a').getAttribute('href');
+        if (path === href) {
+            navLink.classList.add('active');
+        }
+
+        navLink.addEventListener('click', function(e) {
+            navLinks.forEach(link => link.classList.remove('active'));
+            navLink.classList.add('active');
+        });
     });
 </script>
 </html>
