@@ -29,6 +29,10 @@ ul {
     height: 40px;
     margin-bottom: -15px;
 }
+.inner-body .main-header .header-content-holder .inner-header .links-holder .nav-content::-webkit-scrollbar{
+    appearance: none;
+    display: none;
+}
 .inner-body .main-header .header-content-holder .inner-header .links-holder .nav-content .nav .nav-fills{
     font-weight: 500;
     line-height: 2.4;
@@ -274,5 +278,9 @@ footer .link {
     footer .con{
         flex-direction: column-reverse;
         gap: 15px;
+    }
+    .box{
+        width: 100% !important;
+        max-width: 100% !important;
     }
 }
