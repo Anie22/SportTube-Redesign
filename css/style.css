@@ -162,7 +162,6 @@ ul {
     min-height: 40px;
     box-shadow: 0 4px 16px 0 rgba(94, 115, 129, 0.15)
 }
-.inner-body .card-section .inner-card .inner-sub-card .moment .aside-item .aside-links li:hover,
 footer .link:hover{
     color: hsl(0, 100%, 50%) !important;
 }
